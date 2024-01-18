@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: odh-trustyai-service
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/trustyai/odh-trustyai-service@sha256:c224e2d39617dea0b69bb4e57a225c7d119c154f4bbd80a3e998d07713009766
         imagePullPolicy: Always
         name: container-image
         ports:
