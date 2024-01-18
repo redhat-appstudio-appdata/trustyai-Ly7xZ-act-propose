@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: odh-trustyai-service
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: odh-trustyai-service
+    app.kubernetes.io/part-of: trustyai
+  name: odh-trustyai-service
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: odh-trustyai-service
+status:
+  loadBalancer: {}
