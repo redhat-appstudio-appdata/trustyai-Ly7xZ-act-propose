@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-trustyai-service
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/trustyai/odh-trustyai-service@sha256:c224e2d39617dea0b69bb4e57a225c7d119c154f4bbd80a3e998d07713009766
+        name: container-image
+        resources: {}
+status: {}
