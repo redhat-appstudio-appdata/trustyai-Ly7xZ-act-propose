@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: odh-trustyai-service-operator
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
